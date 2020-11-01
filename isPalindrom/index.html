@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isPalindrome</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <section class="header">
+            <img class="logo" src="./css/logo.svg" alt="logo">
+            <nav>
+                <a href="#" class="hide-desktop"><img class="menu" src="./css/menu.svg" alt="menu-icon"></a>
+                <ul id="tgl" class="show-desktop hide-mobile">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="./css/iconfinder_icons_exit_1564505.svg" alt="exit-icon"></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#user-search">My Searches</a></li>
+                    <li><a href="#common-search">Common Searches</a></li>
+                    <li><a href="#palindrom-info">What is a palindrome</a></li>
+                    <li><a href="#">My GitHub</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <div class="grid">
+            <div class="banner">
+                <h1>Check to see if your favorite word is a <span>Palindrome</span></h1>
+            </div>
+            <div class="main-search">
+                <h2>Enter a word a sentence or a phrase:</h2>
+                <h4 class="space">Work with numbers too</h4>
+                <form>
+                    <div class="search-area">
+                        <input type="text" placeholder="exemple" id="search" name="search">
+                        <button type="submit" id="btn-search">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="user-search" id="user-search">
+                <h2>My Searches:</h2>
+                <ul id="myUl" class="lists"></ul>
+            </div>
+            <div class="common-search lists" id="common-search">
+                <h2>Common Searches:</h2>
+                <ul class="lists">
+                    <li class="true">Anna - True</li>
+                    <li class="true">Mom - True</li>
+                    <li class="true">Stats - True</li>
+                    <li class="true">Top spot - True</li>
+                    <li class="false">Google - False</li>
+                    <li class="true">Eva, can I see bees in a cave? - True</li>
+                    <li class="false">Instagram - False</li>
+                    <li class="false">Moon - False</li>
+                    <li class="true">Solos - True</li>
+                </ul>
+            </div>
+            <div id="palindrome-info">
+                <h2>What is a Palindrome</h2>
+                <p>A palindrome is a word, phrase, number or sequence of words that reads the same backward as forward.</p>
+            </div>
+        </div>
+    </main>
+    <footer>Made by Sagi Twig Check out my <a href="https://github.com/Sagitwig" target="_blank">GitHub</a></footer>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
